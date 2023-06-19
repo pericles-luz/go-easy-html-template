@@ -103,10 +103,10 @@ func (c *EasyHTMLTemplate) GetTranslated() (string, error) {
 			continue
 		}
 		if !strings.Contains(c.Text, "{{$"+key+"}}") {
-			onlyMap[key] = value
+			onlyMap[key] = data
 			continue
 		}
-		variables += "{{$" + key + ":=" + `"` + value + `"` + "}}"
+		variables += "{{$" + key + ":=" + `"` + data + `"` + "}}"
 	}
 
 	text, err := template.New("script").Parse(variables + c.Text)
