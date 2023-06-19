@@ -1,0 +1,272 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+		<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url({{.FONT_Nunito_01}}) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url({{.FONT_Nunito_02}}) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url({{.FONT_Nunito_01}}) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url({{.FONT_Nunito_02}}) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url({{.FONT_Nunito_01}}) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url({{.FONT_Nunito_02}}) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url({{.FONT_Nunito_01}}) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url({{.FONT_Nunito_02}}) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+    </style>
+    <style>
+      body {
+        background-image:url("{{.PNG_ConnectSimulacaoBase}}");
+        background-repeat: no-repeat;
+        background-size: 640px;
+        width: 640px;
+				margin: 0;
+      }
+      div.saudacao {
+        font-family: nunito, sans-serif;
+				font-weight: 900;
+				font-style: normal;
+        font-size: 32px;
+        color: #f8b301;
+        font-weight: 900;
+        text-align: left;
+        margin-top: 38.4px;
+        margin-left: 320px;
+        margin-right: 32px;
+        line-height: 1em;
+      }
+      div.veja {
+        font-family: nunito, sans-serif;
+				font-weight: 900;
+				font-style: normal;
+        font-size: 32px;
+        color: #f8b301;
+        font-weight: 900;
+        text-align: left;
+        margin-top: 70.4px;
+        margin-left: 64px;
+        margin-right: 32px;
+        line-height: 1em;
+      }
+      div.confira {
+        font-family: nunito, sans-serif;
+				font-weight: 600;
+				font-style: normal;
+        font-size: 17.28;
+        color: #fff;
+        font-weight: 600;
+        font-style: bold;
+        text-align: left;
+        margin-top: 64px;
+        margin-left: 320px;
+        margin-right: 32px;
+        line-height: 1em;
+      }
+      div.aproximado {
+        font-family: nunito, sans-serif;
+        font-size: 15.36px;
+        color: #000;
+        font-weight: 100;
+        font-style: normal;
+        text-align: left;
+        margin-top: 12.8px;
+        margin-left: 64px;
+        margin-right: 32px;
+        line-height: 1em;
+      }
+      div.titulo {
+        font-weight: 400;
+        font-size: 23.68px;
+        color: #000;
+        font-weight: 100;
+        font-style: normal;
+        text-align: left;
+        margin-top: 51.2px;
+        margin-left: 64px;
+        margin-right: 32px;
+        line-height: 1em;
+      }
+      span.titulo-negrito {
+        font-family: nunito, sans-serif;
+				font-weight: 900;
+				font-style: normal;
+        font-weight: 900;
+      }
+      div.label {
+        font-family: nunito, sans-serif;
+				font-weight: 600;
+				font-style: normal;
+        font-size: 12.8px;
+        color: #000;
+        font-weight: 100;
+        font-style: normal;
+        text-align: left;
+        text-transform: uppercase;
+        margin-top: 51.2px;
+        margin-left: 64px;
+        margin-right: 32px;
+        line-height: 1em;
+      }
+      div.valor {
+        font-style: normal;
+        font-size: 32px;
+        font-weight: 100;
+        color: #000;
+        font-style: normal;
+        text-align: left;
+        text-transform: uppercase;
+        margin-top: 6.4px;
+        margin-left: 64px;
+        margin-right: 32px;
+        line-height: 1em;
+      }
+      div.valor-negrito {
+        font-family: nunito, sans-serif;
+				font-weight: 900;
+				font-style: normal;
+        font-size: 32px;
+        font-weight: 900;
+        color: #000;
+        font-style: normal;
+        text-align: left;
+        text-transform: uppercase;
+        margin-top: 6.4px;
+        margin-left: 64px;
+        margin-right: 32px;
+        line-height: 1em;
+      }
+      hr.separador {
+        margin-top: 19.2px;
+        margin-left: 64px;
+        margin-right: 32px;
+        width: 544px;
+        border: 0.3px solid  #f8b301;
+      }
+      img.connect {
+        margin-top: 132px;
+        margin-left: 64px;
+        margin-right: 32px;
+        height: 64px;
+        border: 0px;
+        float: left;
+      }
+      img.banco {
+        margin-top: 132px;
+        margin-left: 64px;
+        margin-right: 32px;
+        height: 64px;
+        border: 0px;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="saudacao">
+      Oba! A simulação da sua proposta chegou!
+    </div>
+    <div class="confira">
+      Confira abaixo mais informações e conte com a gente!
+    </div>
+    <div class="veja">
+      {{.DE_Pessoa}}, veja sua simulação:
+    </div>
+    <div class="aproximado">
+      *Valores aproximados simulados na data de hoje.
+    </div>
+    <div class="titulo">
+      Antecipação <span class="titulo-negrito">Saque Aniversário FGTS</span>
+    </div>
+    <div class="label">
+      Saldo
+    </div>
+    <div class="valor">
+      R$ {{.DE_Saldo}}
+    </div>
+    <hr class="separador">
+    <div class="label">
+      Valor Liberado
+    </div>
+    <div class="valor-negrito">
+      R$ {{.DE_Liquido}}
+    </div>
+    <hr class="separador">
+    <div class="label">
+      Parcelas Antecipadas
+    </div>
+    <div class="valor">
+      {{.NU_Parcelas}}
+    </div>
+    <hr class="separador">
+    <div class="label">
+      Taxa de Juros
+    </div>
+    <div class="valor">
+      {{.DE_Taxa}}%
+    </div>
+    <hr class="separador">
+    <img class="connect" src="{{.PNG_ConnectSimulacaoLogo}}">
+    <img class="connect" src="{{.PNG_BV}}">
+  </body>
+</html>
