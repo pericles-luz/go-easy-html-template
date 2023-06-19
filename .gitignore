@@ -1,0 +1,27 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+mysql/*
+mysql/*.*
+mysql/**
+mysql/aria_log.00000001
+mysql/aria_log.00000001
+mysql/ib_buffer_pool
+mysql/ib_logfile0
+mysql/aria_log_control
+mysql/ib_buffer_pool
+mysql/aria_log.00000001
+mysql/ibdata1
+*.json
+.DS_Store
+application/mocks
