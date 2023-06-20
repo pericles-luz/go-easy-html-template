@@ -103,10 +103,10 @@ func (c *EasyHTMLTemplate) GetTranslated() (string, error) {
 			continue
 		}
 		if !strings.Contains(c.Text, "{{$"+key+"}}") {
-			onlyMap[key] = value
+			onlyMap[key] = data
 			continue
 		}
-		variables += "{{$" + key + ":=" + `"` + value + `"` + "}}"
+		variables += "{{$" + key + ":=" + `"` + data + `"` + "}}"
 	}
 
 	text, err := template.New("script").Parse(variables + c.Text)
@@ -133,6 +133,22 @@ func LoadDynamicTemplate(templateName string, data map[string]string) (string, e
 	}
 	template.SetText(string(text))
 	template.SetData(data)
+	return template.GetTranslated()
+}
+
+func LoadDynamicTemplateWithAssets(templateName string, assets, data map[string]string) (string, error) {
+	text, err := LoadTemplate(templateName)
+	if err != nil {
+		return "", err
+	}
+	template, err := NewTemplate()
+	if err != nil {
+		debug.PrintStack()
+		return "", err
+	}
+	template.SetText(string(text))
+	template.SetData(data)
+	template.SetAssets(assets)
 	return template.GetTranslated()
 }
 
